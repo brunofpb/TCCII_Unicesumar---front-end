@@ -1,0 +1,79 @@
+  <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleAdm.css">
+  <title>Administrar Solicitações</title>
+</head>
+
+<body>
+  <h1>Gerenciamento de Solicitações</h1>
+
+  <div id="filters" class="filter-container">
+    <label for="filterStartDate" class="filter-label">Data Inicial:</label>
+    <input type="date" id="filterStartDate" class="filter-input">
+    <label for="filterEndDate" class="filter-label">Data Final:</label>
+    <input type="date" id="filterEndDate" class="filter-input">
+    <button id="btnFilter">Filtrar</button>
+    <button id="btnClearFilter">Limpar Filtro</button>
+    <button id="btnGenerateReport">Gerar Relatório</button>
+    <a href="index.html" id="btnLogout">Sair</a>
+  </div>
+
+  <table id="tableData">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Data</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Setor</th>
+        <th>Prioridade</th>
+        <th>Descrição</th>
+        <th>Status</th>
+        <th>Consideração</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+      
+    </tbody>
+  </table>
+
+  <div id="detailsModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Detalhes da Solicitação</h2>
+      <p id="modalSolicitacaoId"></p>
+      <p id="modalSolicitacaoNome"></p>
+      <p id="modalSolicitacaoData"></p>
+      <p id="modalSolicitacaoEmail"></p>
+      <p id="modalSolicitacaoTelefone"></p>
+      <p id="modalSolicitacaoSetor"></p>
+      <p id="modalSolicitacaoPrioridade"></p>
+      <p id="modalSolicitacaoDescricao"></p>
+      <p>Status: <span id="modalSolicitacaoStatus"></span></p>
+      <p>Consideração: <span id="modalSolicitacaoConsideracao"></span></p>
+      <label for="modalStatus">Novo Status:</label>
+      <select class= "modalStatus"id="modalStatus">
+        <option value="Pendente">Pendente</option>
+        <option value="Em Progresso">Em Progresso</option>
+        <option value="Concluído">Concluído</option>
+        <option value="Cancelado">Cancelado</option>
+      </select>
+      <label for="modalConsideracao">Nova Consideração:</label>
+      <textarea id="modalConsideracao" rows="4" cols="50"></textarea>
+      <button id="btnSaveChanges">Salvar</button>
+    </div>
+  </div>
+  
+
+  <script src="scriptAdm.js"></script>
+  
+</body>
+
+</html>

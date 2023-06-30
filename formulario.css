@@ -1,0 +1,111 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+   
+}
+
+
+body{
+
+    background-image: url(LOGO.jpg);
+    background-color: black;
+   
+}
+
+h1{    
+
+    color: rgb(226, 232, 234);
+    margin: 10px 0 20px 0;
+    font-size: 35px;    
+}
+
+h2{
+
+    color: rgb(226, 232, 234);
+    margin: 0px 0 px 0;
+    font-size: 30px;
+}
+
+h3, h4{  
+
+    color: rgb(247, 249, 250);
+    margin: 5px 0 1px 0;
+    font-size: 20px;
+            
+}
+
+.box, form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.setor, .prioridade{
+    
+    margin: 7px 0 7px 0;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.solicita{
+    
+    width: 600px;
+    height: 160px;
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+}
+
+input{
+    
+    margin: 10px 0 1px 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+    padding: 0 5px 0 5px;
+}
+
+textarea{
+    
+    margin: 10px 0 1px 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+    padding: 0 5px 0 5px;
+}
+
+button{
+    
+    font-size: 17px;
+    margin-top: 20px;
+    width: 170px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #a7cecf;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

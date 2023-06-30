@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Seleção de Perfil</title>
+</head>
+
+<body>
+    <h1>BRUNO HENRIQUE DE FREITAS - RA 1891878-5</h1>
+    <h2>Escolha a opção desejada.</h2>
+
+    <div>
+        <a href='formulario.html' style="text-decoration: none;"><button class="Usuario">Cadastrar Solicitação</button></a>
+        <button class="Administrador" id="adminButton">Tela Administrador</button>
+    </div>
+
+    <div id="adminForm" style="display: none;">
+        <h3>Faça login abaixo:</h3>
+        <form id="adminLoginForm">
+
+            <div class="form-group">
+                
+                <input type="text" placeholder="Digite seu Email: teste@teste.com" class= "adminEmail" id="adminEmail" required>
+            </div>
+            <div class="form-group">
+                
+                <input type="password" placeholder="Digite sua Senha: teste"class="adminPassword" id="adminPassword" required>
+            </div>
+            <div class="form-group">
+                <button class="Entrar" type="submit">Entrar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

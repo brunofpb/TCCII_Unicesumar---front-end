@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preencher Formulario</title>
+
+    <link rel="stylesheet" href="formulario.css">
+    
+</head>
+<body> 
+        
+    <div id="box" class="box" > 
+            <h1>BRUNO HENRIQUE DE FREITAS - RA 1891878-5</h1>
+            <H2>Preencha os dados abaixo</H2>
+        <form action="">
+            <input type="text" class="nome" name="nome" placeholder="Nome">
+            <input type="date" class="data" name="data" placeholder="Data">
+            <input type="text" class="email" name="email" placeholder="Email">
+            <input type="tel" class="telefone" name="telefone" placeholder="Telefone">         
+
+            <h3>Setor:</h3>
+
+           <select name="setor" class="setor">
+           <option value="" hidden></option>
+           <option value="Almoxarifado">Almoxarifado</option> 
+           <option value="Atendimento">Atendimento</option>
+           <option value="Contabilidade">Contabilidade</option>
+           <option value="Financeiro">Financeiro</option>
+           <option value="Manutencao">Manutenção</option>
+           <option value="Recursos Humanos">Recursos Humanos</option>        
+           <option value="Segurança">Segurança</option>                   
+           </select> 
+           
+           <h4>Prioridade:</h4>
+           
+           <select name="prioridade" class="prioridade">
+           <option value="" hidden></option>      
+           <option value="baixa">Baixa</option>
+           <option value="normal">Normal</option>
+           <option value="urgente">Urgente</option>
+           <option value="critica">Critica</option>
+           </select> 
+              
+            <textarea type="text" class="solicita" name="solicita" placeholder="Descreva sua solicitação detalhadamente."></textarea>
+           
+           <button id="button" class="button-cta" onclick="" >Cadastrar</button>
+           
+        </form>
+
+        <a href='index.html'><button class="Voltar">Voltar</button></a>
+     </div>
+
+     <script src="formulario.js"></script>
+
+</body>
+
+</html>
